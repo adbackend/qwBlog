@@ -24,7 +24,7 @@ public class PostController {
     @PostMapping("/posts")
     public void post(@RequestBody @Valid PostCreate request) {
 
-        log.info("prams = {}", request.toString());
+        log.info("prams = {} ", request.toString());
 
         request.validate();
 
